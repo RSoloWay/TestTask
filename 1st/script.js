@@ -5,7 +5,7 @@ let convertationRules = getRules()
 function getRules () {
     let request = new XMLHttpRequest ();
     
-    request.open('GET', 'test.json', false);
+    request.open('GET', 'rules.json', false);
     
     request.onload = function() {
         rules = JSON.parse(this.response);
@@ -84,7 +84,6 @@ form.addEventListener('submit', function(e){
 })
 
 
-console.log(convertationRules.ft.km)
 
 /** Реализация возможности расширения программы с помошью динамтческт конструирубщихся селектов
 * таким образом для расширения програмы в JSON файл будет достаточно ввести новые данные - 
