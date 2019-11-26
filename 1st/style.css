@@ -1,0 +1,112 @@
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( 89.7deg,  rgba(0,0,0,1) -10.7%, rgba(53,92,125,1) 88.8% );
+}
+
+section {
+    /* background: linear-gradient(to right, #283048, #859398); */
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 350px;
+    border-radius: 30px;
+    border: 2px solid aqua;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.527);
+}
+
+h1 {
+   text-transform: uppercase;
+   font-family: sans-serif; 
+   font-size: 40px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calc_block {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input, .output {
+    background: linear-gradient(to right, #373b44, #4286f4);
+    display: flex;
+    border-radius: 75px 75px 75px 75px;
+    border: 2px solid aqua;  
+}
+
+input {
+    padding: 0 5px 0 0;
+    margin: 0;
+    border: none;
+    height: 40px;
+    width: 160px;
+    border-radius: 75px 0px 0px 75px;
+    background: none;
+    outline: none;
+    text-align: right;
+    font-size: 20px;
+}
+input::placeholder {
+    color: black;
+    font-size: 20px;
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+select {
+    background: none;
+    outline: none;
+    height: 40px;
+    border-radius: 0px 75px 75px 0px;
+    border: none;
+    border-left: 1px solid aqua;
+}
+
+button {
+    width: 130px;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 30px;
+}
+
+#pop-up {
+    position: absolute;
+    width: 25%;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+.active {
+    display: flex;
+}

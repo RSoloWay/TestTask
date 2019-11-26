@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Distance converter</title>
+</head>
+<body>
+    <section>
+        <h1>Distance converter</h1>
+        <form action="">
+            <div class="calc_block">
+                <div class="input">
+                    <input type="number" step="any" autocomplete="off" id="distance" placeholder="" pattern="^[0-9]*[.,]?[0-9]+$">
+                    <select name="unit" id="unit" >
+                        
+                    </select>
+                </div>
+                <span>converted to</span>
+                <div class="output">
+                    <input type="text" id="result_distance" disabled>
+                    <select name="result_unit" id="result_unit">
+                        
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Get result</button>
+        </form>
+    </section>
+
+    <div id="pop-up">
+        <h2>Result</h2>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
